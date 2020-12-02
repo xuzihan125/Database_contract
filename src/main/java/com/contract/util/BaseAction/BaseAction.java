@@ -1,6 +1,7 @@
 package com.contract.util.BaseAction;
 
 import com.contract.util.emnu.EnumCamp;
+import com.contract.util.emnu.ResultCode;
 import com.contract.util.message.JsonMessage;
 
 
@@ -35,11 +36,10 @@ public class BaseAction {
 //    }
 
     public static <T> JsonMessage<T> buildJsonMessage(T obj) {
-        return new JsonMessage<T>(obj, EnumCamp.ResultCode.SUCCESS.getCode(), EnumCamp.ResultCode.SUCCESS.getName());
+        return new JsonMessage<T>(obj, ResultCode.SUCCESS.getCode(), ResultCode.SUCCESS.getName());
     }
 
     public static <T> JsonMessage<T> buildJsonMessage() {
-        return new JsonMessage(null, EnumCamp.ResultCode.SUCCESS.getCode(), EnumCamp.ResultCode.SUCCESS.getName());
+        return new JsonMessage(null, ResultCode.SUCCESS.getCode(), ResultCode.SUCCESS.getName());
     }
-
 }
