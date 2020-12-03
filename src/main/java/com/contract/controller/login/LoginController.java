@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
-@RestController
+@RestController(value = "/login")
 public class LoginController {
     @Resource
     private LoginService service;
