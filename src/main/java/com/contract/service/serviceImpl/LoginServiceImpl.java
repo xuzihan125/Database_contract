@@ -24,17 +24,16 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public LoginVO checkLogin(LoginDTO loginDTO){
-        //返回类声明
         LoginVO loginVO = new LoginVO();
-        //输入参数验证
-        if(loginDTO==null || StringTools.isEmpty(loginDTO.getName()) || StringTools.isEmpty(loginDTO.getPassword())){
+        //验证是否为空
+        if(loginDTO==null || StringTools.isEmpty(loginDTO.getNum()) || StringTools.isEmpty(loginDTO.getPassword())){
             loginVO.setState(false);
             loginVO.setFeedBack(ErrorCode.PARAM_ERROR.getName());
             return loginVO;
         }
         //设置检索条件
         UserExample example = new UserExample();
-        example.createCriteria().andNameEqualTo(loginDTO.getName()).andPasswordEqualTo(loginDTO.getPassword());
+        example.createCriteria().andUsernumEqualTo(loginDTO.getNum()).andPasswordEqualTo(loginDTO.getPassword());
         //检索
         List<User> entityList = userMapper.selectByExample(example);
         //验证登录是否成功
@@ -43,10 +42,12 @@ public class LoginServiceImpl implements LoginService {
             loginVO.setFeedBack(ErrorCode.INVALID_LOGIN.getName());
             return loginVO;
         }
-        //设置返回内容
-        User user = entityList.get(0);
-        loginVO.setState(true);
-        loginVO.setUsernum(user.getUsernum());
-        return loginVO;
+        else {
+            //设置返回内容
+            User user = entityList.get(0);
+            loginVO.setState(true);
+            loginVO.setUsername(user.getName());
+            return loginVO;
+        }
     }
 }

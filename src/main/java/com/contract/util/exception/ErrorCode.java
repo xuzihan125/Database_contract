@@ -10,7 +10,8 @@ public enum ErrorCode {
 	SUCCESS("act0", "成功"),
 	LIST_COPY_ERROR("act-1", "数据复制异常"),
 	PARAM_ERROR("act-2", "输入参数不能为空"),
-	INVALID_LOGIN("act-3", "用户名或账号不匹配"),
+	INVALID_LOGIN("act-3", "账号或密码不正确"),
+	INVALID_Registr("act4","工号已存在！")
 	;
 
 
