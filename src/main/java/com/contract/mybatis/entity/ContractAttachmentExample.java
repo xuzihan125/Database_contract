@@ -475,63 +475,63 @@ public class ContractAttachmentExample {
             return (Criteria) this;
         }
 
-        public Criteria andUploadtmeIsNull() {
-            addCriterion("uploadTme is null");
+        public Criteria andUploadtimeIsNull() {
+            addCriterion("uploadTime is null");
             return (Criteria) this;
         }
 
-        public Criteria andUploadtmeIsNotNull() {
-            addCriterion("uploadTme is not null");
+        public Criteria andUploadtimeIsNotNull() {
+            addCriterion("uploadTime is not null");
             return (Criteria) this;
         }
 
-        public Criteria andUploadtmeEqualTo(Date value) {
-            addCriterion("uploadTme =", value, "uploadtme");
+        public Criteria andUploadtimeEqualTo(Date value) {
+            addCriterion("uploadTime =", value, "uploadtime");
             return (Criteria) this;
         }
 
-        public Criteria andUploadtmeNotEqualTo(Date value) {
-            addCriterion("uploadTme <>", value, "uploadtme");
+        public Criteria andUploadtimeNotEqualTo(Date value) {
+            addCriterion("uploadTime <>", value, "uploadtime");
             return (Criteria) this;
         }
 
-        public Criteria andUploadtmeGreaterThan(Date value) {
-            addCriterion("uploadTme >", value, "uploadtme");
+        public Criteria andUploadtimeGreaterThan(Date value) {
+            addCriterion("uploadTime >", value, "uploadtime");
             return (Criteria) this;
         }
 
-        public Criteria andUploadtmeGreaterThanOrEqualTo(Date value) {
-            addCriterion("uploadTme >=", value, "uploadtme");
+        public Criteria andUploadtimeGreaterThanOrEqualTo(Date value) {
+            addCriterion("uploadTime >=", value, "uploadtime");
             return (Criteria) this;
         }
 
-        public Criteria andUploadtmeLessThan(Date value) {
-            addCriterion("uploadTme <", value, "uploadtme");
+        public Criteria andUploadtimeLessThan(Date value) {
+            addCriterion("uploadTime <", value, "uploadtime");
             return (Criteria) this;
         }
 
-        public Criteria andUploadtmeLessThanOrEqualTo(Date value) {
-            addCriterion("uploadTme <=", value, "uploadtme");
+        public Criteria andUploadtimeLessThanOrEqualTo(Date value) {
+            addCriterion("uploadTime <=", value, "uploadtime");
             return (Criteria) this;
         }
 
-        public Criteria andUploadtmeIn(List<Date> values) {
-            addCriterion("uploadTme in", values, "uploadtme");
+        public Criteria andUploadtimeIn(List<Date> values) {
+            addCriterion("uploadTime in", values, "uploadtime");
             return (Criteria) this;
         }
 
-        public Criteria andUploadtmeNotIn(List<Date> values) {
-            addCriterion("uploadTme not in", values, "uploadtme");
+        public Criteria andUploadtimeNotIn(List<Date> values) {
+            addCriterion("uploadTime not in", values, "uploadtime");
             return (Criteria) this;
         }
 
-        public Criteria andUploadtmeBetween(Date value1, Date value2) {
-            addCriterion("uploadTme between", value1, value2, "uploadtme");
+        public Criteria andUploadtimeBetween(Date value1, Date value2) {
+            addCriterion("uploadTime between", value1, value2, "uploadtime");
             return (Criteria) this;
         }
 
-        public Criteria andUploadtmeNotBetween(Date value1, Date value2) {
-            addCriterion("uploadTme not between", value1, value2, "uploadtme");
+        public Criteria andUploadtimeNotBetween(Date value1, Date value2) {
+            addCriterion("uploadTime not between", value1, value2, "uploadtime");
             return (Criteria) this;
         }
     }

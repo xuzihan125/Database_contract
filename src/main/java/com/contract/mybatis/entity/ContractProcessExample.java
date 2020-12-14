@@ -325,6 +325,76 @@ public class ContractProcessExample {
             return (Criteria) this;
         }
 
+        public Criteria andUsernumIsNull() {
+            addCriterion("userNum is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumIsNotNull() {
+            addCriterion("userNum is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumEqualTo(String value) {
+            addCriterion("userNum =", value, "usernum");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumNotEqualTo(String value) {
+            addCriterion("userNum <>", value, "usernum");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumGreaterThan(String value) {
+            addCriterion("userNum >", value, "usernum");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumGreaterThanOrEqualTo(String value) {
+            addCriterion("userNum >=", value, "usernum");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumLessThan(String value) {
+            addCriterion("userNum <", value, "usernum");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumLessThanOrEqualTo(String value) {
+            addCriterion("userNum <=", value, "usernum");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumLike(String value) {
+            addCriterion("userNum like", value, "usernum");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumNotLike(String value) {
+            addCriterion("userNum not like", value, "usernum");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumIn(List<String> values) {
+            addCriterion("userNum in", values, "usernum");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumNotIn(List<String> values) {
+            addCriterion("userNum not in", values, "usernum");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumBetween(String value1, String value2) {
+            addCriterion("userNum between", value1, value2, "usernum");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsernumNotBetween(String value1, String value2) {
+            addCriterion("userNum not between", value1, value2, "usernum");
+            return (Criteria) this;
+        }
+
         public Criteria andStateIsNull() {
             addCriterion("state is null");
             return (Criteria) this;
@@ -382,76 +452,6 @@ public class ContractProcessExample {
 
         public Criteria andStateNotBetween(Integer value1, Integer value2) {
             addCriterion("state not between", value1, value2, "state");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameIsNull() {
-            addCriterion("userName is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameIsNotNull() {
-            addCriterion("userName is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameEqualTo(String value) {
-            addCriterion("userName =", value, "username");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameNotEqualTo(String value) {
-            addCriterion("userName <>", value, "username");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameGreaterThan(String value) {
-            addCriterion("userName >", value, "username");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameGreaterThanOrEqualTo(String value) {
-            addCriterion("userName >=", value, "username");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameLessThan(String value) {
-            addCriterion("userName <", value, "username");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameLessThanOrEqualTo(String value) {
-            addCriterion("userName <=", value, "username");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameLike(String value) {
-            addCriterion("userName like", value, "username");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameNotLike(String value) {
-            addCriterion("userName not like", value, "username");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameIn(List<String> values) {
-            addCriterion("userName in", values, "username");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameNotIn(List<String> values) {
-            addCriterion("userName not in", values, "username");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameBetween(String value1, String value2) {
-            addCriterion("userName between", value1, value2, "username");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsernameNotBetween(String value1, String value2) {
-            addCriterion("userName not between", value1, value2, "username");
             return (Criteria) this;
         }
 

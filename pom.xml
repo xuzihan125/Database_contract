@@ -81,6 +81,18 @@
             <artifactId>pagehelper</artifactId>
             <version>5.1.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-jdbc</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -119,6 +131,12 @@
                 <directory>src/main/resources</directory>
                 <includes>
                     <include>*.*</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>file/*.*</include>
                 </includes>
             </resource>
         </resources>

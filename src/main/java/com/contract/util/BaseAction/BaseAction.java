@@ -35,11 +35,11 @@ public class BaseAction {
 //        userId.remove();
 //    }
 
-    public static <T> JsonMessage<T> buildJsonMessage(T obj) {
+    public <T> JsonMessage<T> buildJsonMessage(T obj) {
         return new JsonMessage<T>(obj, ResultCode.SUCCESS.getCode(), ResultCode.SUCCESS.getName());
     }
 
-    public static <T> JsonMessage<T> buildJsonMessage() {
+    public <T> JsonMessage<T> buildJsonMessage() {
         return new JsonMessage(null, ResultCode.SUCCESS.getCode(), ResultCode.SUCCESS.getName());
     }
 }
