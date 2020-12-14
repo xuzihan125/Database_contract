@@ -15,6 +15,7 @@ import com.contract.util.tools.StringTools;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @SuppressWarnings("ALL")
@@ -41,6 +42,7 @@ public class LoginServiceImpl implements LoginService {
             throw new ActException(ErrorCode.INVALID_LOGIN.getCode(),ErrorCode.INVALID_LOGIN.getName());
         }
         else {
+            //ssesion
             User user = entityList.get(0);
             loginVO.setState(true);
             loginVO.setName(user.getName());

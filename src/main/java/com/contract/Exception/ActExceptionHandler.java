@@ -23,7 +23,7 @@ public class ActExceptionHandler extends SimpleControllerHandlerAdapter {
     @ResponseBody
     @ExceptionHandler(ActException.class)
     public ErrorVO exceptionHandler(ActException e){
-        ErrorVO errorVO = new ErrorVO();
+        ErrorVO errorVO = new ErrorVO(false,e.getCode());
         errorVO.setState(false);
         errorVO.setFeedBack(e.getMessage());
         return errorVO;
